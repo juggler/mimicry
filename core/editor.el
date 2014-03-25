@@ -16,7 +16,6 @@
 ;; using 2 spaces instead of tabs
 (setq-default indent-tabs-mode nil)
 (setq tab-width 2)
-(setq evil-shift-width 2)
 
 (global-set-key (kbd "RET") 'newline-and-indent)
 
