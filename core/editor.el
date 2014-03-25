@@ -6,7 +6,7 @@
 (setq initial-major-mode 'text-mode)
 (setq default-major-mode 'text-mode)
 
-;; cleanup up file before saving
+;; cleanup file before saving
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; smart tabs (indentation and completion)
@@ -18,20 +18,6 @@
 (setq tab-width 2)
 (setq evil-shift-width 2)
 (setq coffee-tab-width 2)
-
-;; Enable mouse support (only for terminal mode)
-(unless window-system
-  (require 'mouse)
-  (xterm-mouse-mode t)
-  (global-set-key [mouse-4] '(lambda ()
-                              (interactive)
-                              (scroll-down 1)))
-  (global-set-key [mouse-5] '(lambda ()
-                              (interactive)
-                              (scroll-up 1)))
-  (defun track-mouse (e))
-  (setq mouse-sel-mode t)
-)
 
 (global-set-key (kbd "RET") 'newline-and-indent)
 
