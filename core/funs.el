@@ -13,6 +13,6 @@
   "Create tags file."
   (interactive "DDirectory: ")
   (shell-command
-    (format "%s -e -R %s" path-to-ctags (directory-file-name dir-name))))
+    (format "/usr/local/bin/ctags -e -R %s" (directory-file-name dir-name))))
 
 (provide 'funs)

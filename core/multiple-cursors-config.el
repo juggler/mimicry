@@ -21,7 +21,4 @@
         evil-mouse-drag-region
         ))
 
-(global-unset-key (kbd "s-<down-mouse-1>"))
-(global-set-key (kbd "s-<mouse-1>") 'mc/add-cursor-on-click)
-
 (provide 'multiple-cursors-config)

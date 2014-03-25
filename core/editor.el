@@ -17,8 +17,6 @@
 (setq-default indent-tabs-mode nil)
 (setq tab-width 2)
 
-(global-set-key (kbd "RET") 'newline-and-indent)
-
 ;; auto reload buffer if file was changed outside
 (global-auto-revert-mode 1)
 
