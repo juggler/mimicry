@@ -1,15 +1,17 @@
 ;; Essential interface customizations
 
+;; remove welcome screen
 (setf inhibit-splash-screen t)
+;; remove default message in a *scratch* buffer
 (setq initial-scratch-message "")
 
-;(set-frame-parameter nil 'fullscreen 'fullboth)
-
+;; remove all unnecessary GUI's
 (set-fringe-mode 0)
 (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
   (when (fboundp mode) (funcall mode -1)))
 
 (set-default-font "Droid Sans Mono 12")
+;; fixes non-ascii font
 (set-fontset-font "fontset-default" 'unicode "Droid Sans Mono")
 
 ;; highlight current line
@@ -18,8 +20,9 @@
 ;; line numbers
 (global-linum-mode 1)
 (setq linum-format "%5d ")
-(set-default 'truncate-lines t)
 (set-face-background 'linum "#eee8d5")
+
+(set-default 'truncate-lines t)
 
 ;; smooth scrolling
 (setq scroll-margin 0
@@ -34,7 +37,6 @@
 
 ;; theme
 (load-theme 'solarized-light t)
-(require 'powerline-darkside-theme)
 
 ;; cursor
 (blink-cursor-mode 0)

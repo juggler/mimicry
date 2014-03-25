@@ -13,7 +13,6 @@
 (depends-on "multiple-cursors")
 (depends-on "pallet")
 (depends-on "phi-search")
-(depends-on "powerline")
 (depends-on "prodigy")
 (depends-on "projectile")
 (depends-on "rbenv")
