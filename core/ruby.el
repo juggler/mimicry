@@ -14,8 +14,4 @@
 (add-to-list 'auto-mode-alist '("\\.jsonify\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Podfile\\'" . ruby-mode))
 
-(require 'rbenv)
-(setq rbenv-show-active-ruby-in-modeline nil)
-(global-rbenv-mode)
-
 (provide 'ruby)
