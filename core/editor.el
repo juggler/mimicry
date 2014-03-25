@@ -34,13 +34,4 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-; smart parens
-(require 'smartparens-config)
-(smartparens-global-mode t)
-(setq sp-autoescape-string-quote nil)
-(turn-on-smartparens-strict-mode)
-
-;; highlights matching pairs
-(show-smartparens-global-mode t)
-
 (provide 'editor)

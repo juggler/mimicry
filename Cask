@@ -19,7 +19,6 @@
 (depends-on "restclient")
 (depends-on "rspec-mode")
 (depends-on "smart-tab")
-(depends-on "smartparens")
 (depends-on "smex")
 (depends-on "solarized-theme")
 (depends-on "yaml-mode")
