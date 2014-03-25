@@ -17,10 +17,10 @@
 (setq-default indent-tabs-mode nil)
 (setq tab-width 2)
 (setq evil-shift-width 2)
-(setq coffee-tab-width 2)
 
 (global-set-key (kbd "RET") 'newline-and-indent)
 
+;; auto reload buffer if file was changed outside
 (global-auto-revert-mode 1)
 
 ;; newline at EOF

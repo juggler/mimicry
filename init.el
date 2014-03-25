@@ -8,6 +8,7 @@
 (require 'editor)
 (require 'extended-editor)
 (require 'ruby)
+(require 'coffeescript)
 
 (unless (display-graphic-p)
   (require 'console))
