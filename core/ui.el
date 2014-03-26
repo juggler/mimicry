@@ -10,9 +10,14 @@
 (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
   (when (fboundp mode) (funcall mode -1)))
 
-(set-default-font "Droid Sans Mono 12")
-;; fixes non-ascii font
-(set-fontset-font "fontset-default" 'unicode "Droid Sans Mono")
+;; set proper language (fixes cyrillic letters in ansi-term)
+(setenv "LANG" "ru_RU.UTF-8")
+;; default font
+(set-face-attribute 'default nil :family "Droid Sans Mono")
+;; font for all unicode characters
+(set-fontset-font t 'unicode "Symbola" nil 'prepend)
+;; override font for cyrillic characters
+(set-fontset-font t 'cyrillic "Droid Sans Mono")
 
 ;; highlight current line
 (global-hl-line-mode 1)
