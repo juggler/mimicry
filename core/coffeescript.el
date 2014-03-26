@@ -8,4 +8,8 @@
   (when (coffee-line-wants-indent)
     (insert-tab)))
 
+(add-hook 'coffee-mode-hook
+  (function (lambda ()
+          (setq evil-shift-width coffee-tab-width))))
+
 (provide 'coffeescript)

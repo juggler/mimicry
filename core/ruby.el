@@ -14,4 +14,8 @@
 (add-to-list 'auto-mode-alist '("\\.jsonify\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Podfile\\'" . ruby-mode))
 
+(add-hook 'ruby-mode-hook
+  (function (lambda ()
+          (setq evil-shift-width ruby-indent-level))))
+
 (provide 'ruby)

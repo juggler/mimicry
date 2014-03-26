@@ -4,8 +4,6 @@
 (global-unset-key (kbd "s-<down-mouse-1>"))
 (global-set-key (kbd "s-<mouse-1>") 'mc/add-cursor-on-click)
 
-;; Enter - create newline and indent
-(global-set-key (kbd "RET") 'newline-and-indent)
 ;; Cmd+Enter - Toggle fullscreen mode (a-la iTerm2)
 (global-set-key (kbd "s-<return>") 'toggle-frame-fullscreen)
 ;; F2 - Rename current file

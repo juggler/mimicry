@@ -16,6 +16,7 @@
 ;; using 2 spaces instead of tabs
 (setq-default indent-tabs-mode nil)
 (setq tab-width 2)
+(electric-indent-mode +1)
 
 ;; auto reload buffer if file was changed outside
 (global-auto-revert-mode 1)
