@@ -4,6 +4,7 @@
 (setq magit-emacsclient-executable "/usr/local/bin/emacsclient")
 
 (projectile-global-mode)
+(setq projectile-tags-command "/usr/local/bin/ctags -e -R")
 
 (ido-mode 1)
 (flx-ido-mode 1)
@@ -19,13 +20,6 @@
   (define-key ido-completion-map [up] 'ido-prev-match))
 
 (add-hook 'ido-setup-hook 'ido-define-keys)
-
-; ctags
-(defun visit-project-tags ()
-  (if (file-exists-p "TAGS")
-    (visit-tags-table "TAGS")))
-
-(add-hook 'projectile-mode-hook 'visit-project-tags)
 
 (require 'etags-select)
 

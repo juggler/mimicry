@@ -9,12 +9,6 @@
         (rename-file filename new-name t)
         (set-visited-file-name new-name t t)))))
 
-(defun create-tags (dir-name)
-  "Create tags file."
-  (interactive "DDirectory: ")
-  (shell-command
-    (format "/usr/local/bin/ctags -e -R %s" dir-name)))
-
 ;; Check ffap string for line-number and goto it (using advice)
 ;; Useful e.g. for output from grep -nH. Expects file-name:line-number
 ;; http://www.emacswiki.org/emacs/FindFileAtPoint
