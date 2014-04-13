@@ -3,3 +3,5 @@ auto-save-list
 eshell
 projectile-bookmarks.eld
 .cask
+.mc-lists.el
+projectile.cache
