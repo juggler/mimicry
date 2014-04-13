@@ -26,5 +26,7 @@
 (global-set-key (kbd "s-t") 'projectile-find-file)
 ;; toggle ansi-term
 (global-set-key (kbd "s-`") 'toggle-term)
+;; open file at cursor
+(global-set-key [C-s-268632070] 'find-file-at-point)
 
 (provide 'key-bindings)
