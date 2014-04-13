@@ -24,5 +24,7 @@
 (global-set-key (kbd "s-[") 'pop-tag-mark)
 ;; Cmd+t - Fuzzy open file
 (global-set-key (kbd "s-t") 'projectile-find-file)
+;; toggle ansi-term
+(global-set-key (kbd "s-`") 'toggle-term)
 
 (provide 'key-bindings)

@@ -3,11 +3,13 @@
 
 (require 'package-init)
 (require 'ui)
+(require 'ansi-term-ui)
 (require 'funs)
 (require 'darkside)
 (require 'editor)
 (require 'extended-editor)
 (require 'ruby)
+(require 'web)
 (require 'coffeescript)
 
 (unless (display-graphic-p)

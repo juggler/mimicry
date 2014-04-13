@@ -1,6 +1,8 @@
 (source melpa)
 (source marmalade)
 
+(depends-on "web-mode")
+(depends-on "ag")
 (depends-on "coffee-mode")
 (depends-on "etags-select")
 (depends-on "evil")
@@ -8,6 +10,7 @@
 (depends-on "gitconfig-mode")
 (depends-on "gitignore-mode")
 (depends-on "magit")
+(depends-on "github-browse-file")
 (depends-on "markdown-mode")
 (depends-on "multiple-cursors")
 (depends-on "pallet")
@@ -16,3 +19,4 @@
 (depends-on "smex")
 (depends-on "solarized-theme")
 (depends-on "yaml-mode")
+(depends-on "slim-mode")
