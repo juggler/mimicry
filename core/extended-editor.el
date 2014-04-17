@@ -21,6 +21,11 @@
 
 (add-hook 'ido-setup-hook 'ido-define-keys)
 
+;; auto-complete
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/dict")
+(ac-config-default)
+
 (require 'etags-select)
 
 (provide 'extended-editor)

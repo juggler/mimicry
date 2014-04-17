@@ -20,3 +20,4 @@
 (depends-on "solarized-theme")
 (depends-on "yaml-mode")
 (depends-on "slim-mode")
+(depends-on "auto-complete")
