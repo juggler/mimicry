@@ -1,5 +1,6 @@
 (source melpa)
 (source marmalade)
+(source gnu)
 
 (depends-on "web-mode")
 (depends-on "ag")
@@ -21,3 +22,9 @@
 (depends-on "yaml-mode")
 (depends-on "slim-mode")
 (depends-on "auto-complete")
+(depends-on "ensime")
+(depends-on "scala-mode")
+(depends-on "sbt-mode")
+(depends-on "clojure-mode")
+(depends-on "excorporate")
+(depends-on "json-mode")

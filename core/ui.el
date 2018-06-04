@@ -13,7 +13,8 @@
 ;; set proper language (fixes cyrillic letters in ansi-term)
 (setenv "LANG" "ru_RU.UTF-8")
 ;; default font
-(set-face-attribute 'default nil :family "Droid Sans Mono")
+;;(set-face-attribute 'default nil :family "Droid Sans Mono")
+(set-face-attribute 'default nil :family "IBM Plex Mono")
 ;; font for all unicode characters
 (set-fontset-font t 'unicode "Symbola" nil 'prepend)
 ;; override font for cyrillic characters
@@ -46,5 +47,22 @@
 ;; cursor
 (blink-cursor-mode 0)
 (set-cursor-color "#D33682")
+
+;; mode-line
+(set-face-attribute 'mode-line nil :box '(:width 0) :underline nil :overline nil)
+(set-face-attribute 'mode-line-inactive nil :box '(:width 0) :underline nil :overline nil)
+(defface buffer-name-face '((t (:weight bold))) "" :group 'faces)
+
+(defun buffer-state-color ()
+  (if (buffer-modified-p)
+      (propertize "💾" 'face '(:foreground "#d33682" :height 1.1))
+      (propertize "💾" 'face '(:foreground "#657b83" :height 1.1))))
+
+(setq-default mode-line-format (list " 🚀 " '(:eval (buffer-state-color)) " " '(:eval (propertize "%b:" 'face 'buffer-name-face 'help-echo (buffer-file-name))) "%l"))
+;;(setq-default mode-line-format (list " 🚀 %& " '(:eval (propertize "%b:" 'face 'buffer-name-face 'help-echo (buffer-file-name))) "%l"))
+
+;; start speedbar on load
+(speedbar)
+(speedbar-toggle-show-all-files)
 
 (provide 'ui)
